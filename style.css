@@ -1,0 +1,1312 @@
+/* =========================================================
+   DISHA COMPUTER INSTITUTE
+   STUDENT NOTES PORTAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    color: #172033;
+    background: #f8f9fc;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    height: 82px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    border-bottom: 1px solid #eeeeee;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
+}
+
+
+/* =========================================================
+   LOGO AREA
+========================================================= */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   DISHA LOGO
+========================================================= */
+
+.institute-logo {
+
+    width: 155px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+
+/* ACTUAL IMAGE */
+
+.institute-logo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    object-position: center;
+
+}
+
+
+/* =========================================================
+   PORTAL TITLE
+========================================================= */
+
+.portal-title {
+
+    border-left: 1px solid #e5e5e5;
+
+    padding-left: 18px;
+
+    white-space: nowrap;
+}
+
+.portal-title h2 {
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #172033;
+
+    line-height: 1.2;
+}
+
+.portal-title span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    color: #777777;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.navbar nav a {
+
+    position: relative;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #555555;
+
+    padding: 8px 0;
+
+    transition: 0.25s ease;
+}
+
+.navbar nav a:hover {
+
+    color: #e51d2a;
+}
+
+.navbar nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #e51d2a;
+
+    transition: 0.25s ease;
+}
+
+.navbar nav a:hover::after {
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   ADMIN BUTTON
+========================================================= */
+
+.admin-btn {
+
+    background: #e51d2a;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+
+    box-shadow:
+        0 5px 15px rgba(229, 29, 42, 0.18);
+}
+
+.admin-btn:hover {
+
+    background: #c91420;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height: 570px;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 90% 20%,
+            #ffe6e8,
+            transparent 35%
+        ),
+        #ffffff;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+
+    max-width: 650px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   HERO LOGO
+========================================================= */
+
+.hero-brand {
+
+    width: 300px;
+
+    height: 125px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    margin-bottom: 15px;
+}
+
+.hero-brand img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: left center;
+
+    display: block;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border-radius: 30px;
+
+    background: #fff0f1;
+
+    color: #d71927;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #ffd8db;
+}
+
+
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
+.hero h1 {
+
+    font-size: clamp(45px, 6vw, 72px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    font-weight: 800;
+
+    color: #111827;
+}
+
+.hero h1 span {
+
+    color: #e51d2a;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.hero p {
+
+    max-width: 580px;
+
+    margin-top: 25px;
+
+    line-height: 1.8;
+
+    color: #687083;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.primary-btn {
+
+    background: #e51d2a;
+
+    color: white;
+
+    padding: 14px 22px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+.primary-btn:hover {
+
+    background: #c91420;
+
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+
+    border: 1px solid #ddd;
+
+    background: white;
+
+    padding: 14px 22px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+.secondary-btn:hover {
+
+    border-color: #e51d2a;
+
+    color: #e51d2a;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO CARD
+========================================================= */
+
+.hero-card {
+
+    width: 350px;
+
+    min-height: 310px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eeeeee;
+
+    position: relative;
+
+    z-index: 2;
+
+    transition: 0.3s ease;
+}
+
+.hero-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.11);
+}
+
+.floating-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 16px;
+
+    background: #fff0f1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+.hero-card h3 {
+
+    font-size: 24px;
+}
+
+.hero-card p {
+
+    color: #73798a;
+
+    margin-top: 12px;
+
+    line-height: 1.7;
+}
+
+.mini-stat {
+
+    display: flex;
+
+    gap: 40px;
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.mini-stat strong {
+
+    display: block;
+
+    font-size: 24px;
+
+    color: #e51d2a;
+}
+
+.mini-stat small {
+
+    color: #777777;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.search-section {
+
+    padding: 30px 8%;
+
+    background: white;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.search-box {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    height: 58px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 20px;
+
+    gap: 12px;
+
+    background: #fafafa;
+
+    transition: 0.25s ease;
+}
+
+.search-box:focus-within {
+
+    border-color: #e51d2a;
+
+    box-shadow:
+        0 0 0 4px rgba(229, 29, 42, 0.07);
+}
+
+.search-box input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+.section {
+
+    padding: 90px 8%;
+
+    background: #f8f9fc;
+}
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+
+    font-size: 36px;
+
+    margin-top: 8px;
+
+    font-weight: 800;
+
+    color: #111827;
+}
+
+.section-heading p {
+
+    color: #777;
+
+    max-width: 400px;
+
+    line-height: 1.6;
+}
+
+.section-label {
+
+    color: #e51d2a;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.center {
+
+    display: block;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SUBJECTS
+========================================================= */
+
+.subject-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.subject-card {
+
+    background: white;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition: 0.25s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.subject-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 3px;
+
+    background: #e51d2a;
+
+    transition: 0.3s ease;
+}
+
+.subject-card:hover::before {
+
+    width: 100%;
+}
+
+.subject-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.07);
+
+    border-color: #ffd0d3;
+}
+
+.subject-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    background: #fff0f1;
+
+    color: #e51d2a;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.subject-card h3 {
+
+    font-size: 18px;
+}
+
+.subject-card p {
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin: 10px 0 20px;
+
+    line-height: 1.6;
+}
+
+.view-btn {
+
+    color: #e51d2a;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.view-btn:hover {
+
+    color: #c91420;
+}
+
+
+/* =========================================================
+   RESOURCES
+========================================================= */
+
+.resources-section {
+
+    background: #111827;
+
+    color: white;
+
+    padding: 90px 8%;
+}
+
+.resource-grid {
+
+    margin-top: 45px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.resource-card {
+
+    background: #1c2535;
+
+    border: 1px solid #2e3747;
+
+    border-radius: 15px;
+
+    padding: 28px;
+
+    transition: 0.25s ease;
+}
+
+.resource-card:hover {
+
+    transform: translateY(-5px);
+
+    background: #202b3e;
+}
+
+.resource-icon {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.resource-card h3 {
+
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+
+    color: #aeb5c2;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-section {
+
+    padding: 100px 8%;
+
+    background: white;
+}
+
+.about-content {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about-content h2 {
+
+    font-size: 40px;
+
+    margin: 10px 0 20px;
+
+    color: #111827;
+}
+
+.about-content p {
+
+    color: #6d7484;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: #0b0f17;
+
+    color: white;
+
+    padding: 40px 8%;
+}
+
+.footer-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+/* Footer logo */
+
+.footer-brand img {
+
+    width: 210px;
+
+    height: 80px;
+
+    object-fit: contain;
+
+    object-position: left center;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+
+    color: #9298a5;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+
+        padding: 0 4%;
+    }
+
+    .navbar nav {
+
+        gap: 18px;
+    }
+
+    .hero {
+
+        padding: 70px 5%;
+    }
+
+    .section {
+
+        padding: 80px 5%;
+    }
+
+    .resources-section {
+
+        padding: 80px 5%;
+    }
+
+    .about-section {
+
+        padding: 80px 5%;
+    }
+
+    .subject-grid {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    .resource-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        height: 75px;
+    }
+
+    .navbar nav {
+
+        display: none;
+    }
+
+    .institute-logo {
+
+        width: 145px;
+
+        height: 60px;
+    }
+
+    .hero {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding-top: 60px;
+
+        padding-bottom: 70px;
+    }
+
+    .hero-card {
+
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+    .subject-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* NAVBAR */
+
+    .navbar {
+
+        height: 70px;
+
+        padding: 0 15px;
+    }
+
+    .logo-area {
+
+        gap: 0;
+    }
+
+    .institute-logo {
+
+        width: 125px;
+
+        height: 52px;
+    }
+
+    .portal-title {
+
+        display: none;
+    }
+
+    .admin-btn {
+
+        padding: 9px 12px;
+
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+
+        padding: 50px 20px 60px;
+
+        gap: 35px;
+    }
+
+    .hero-brand {
+
+        width: 240px;
+
+        height: 100px;
+    }
+
+    .hero h1 {
+
+        font-size: clamp(40px, 13vw, 55px);
+
+        letter-spacing: -2px;
+    }
+
+    .hero p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* HERO CARD */
+
+    .hero-card {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 28px;
+    }
+
+
+    /* SEARCH */
+
+    .search-section {
+
+        padding: 20px;
+    }
+
+    .search-box {
+
+        height: 52px;
+
+        padding: 0 15px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+
+        padding: 60px 20px;
+    }
+
+    .section-heading {
+
+        display: block;
+
+        margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+
+        font-size: 30px;
+    }
+
+    .section-heading p {
+
+        margin-top: 15px;
+    }
+
+
+    /* SUBJECTS */
+
+    .subject-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    /* RESOURCES */
+
+    .resources-section {
+
+        padding: 60px 20px;
+    }
+
+    .resource-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-top: 30px;
+    }
+
+
+    /* ABOUT */
+
+    .about-section {
+
+        padding: 70px 20px;
+    }
+
+    .about-content h2 {
+
+        font-size: 32px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+        padding: 35px 20px;
+    }
+
+    .footer-content {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer-brand img {
+
+        width: 180px;
+
+        height: 70px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .institute-logo {
+
+        width: 110px;
+
+        height: 48px;
+    }
+
+    .admin-btn {
+
+        padding: 8px 10px;
+
+        font-size: 10px;
+    }
+
+    .hero-brand {
+
+        width: 210px;
+
+        height: 85px;
+    }
+
+    .hero h1 {
+
+        font-size: 39px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+:focus-visible {
+
+    outline: 3px solid rgba(229, 29, 42, 0.25);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   TEXT SELECTION
+========================================================= */
+
+::selection {
+
+    background: #e51d2a;
+
+    color: white;
+}

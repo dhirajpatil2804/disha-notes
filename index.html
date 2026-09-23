@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Disha Computer Institute | Student Notes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo-area">
+
+    <a href="#home" class="institute-logo">
+        <img
+            src="./assests/disha-logo.png"
+            alt="Disha Computer Institute"
+        >
+    </a>
+
+    <div class="portal-title">
+        <h2>Student Notes Portal</h2>
+        <span>Official Learning Resources</span>
+    </div>
+
+</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <a href="admin.html" class="admin-btn">
+        Institute Login
+    </a>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            📚 Official Student Learning Portal
+        </span>
+
+        <h1>
+            Learn Smarter.<br>
+            <span>Study Better.</span>
+        </h1>
+
+        <p>
+            Access subject-wise notes, online study material,
+            PDF notes and learning resources from Disha Computer Institute.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#subjects" class="primary-btn">
+                Explore Subjects →
+            </a>
+
+            <a href="#resources" class="secondary-btn">
+                View Resources
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-card">
+
+        <div class="floating-icon">📖</div>
+
+        <h3>Student Notes</h3>
+
+        <p>
+            Your centralized place for
+            subject notes and study material.
+        </p>
+
+        <div class="mini-stat">
+
+            <div>
+                <strong id="subjectCount">0</strong>
+                <small>Subjects</small>
+            </div>
+
+            <div>
+                <strong id="noteCount">0</strong>
+                <small>Notes</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+    <div class="search-box">
+
+        <span>🔍</span>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search subject or notes..."
+        >
+
+    </div>
+
+</section>
+
+
+<!-- SUBJECTS -->
+
+<section class="section" id="subjects">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-label">
+                STUDY MATERIAL
+            </span>
+
+            <h2>
+                Explore Subjects
+            </h2>
+
+        </div>
+
+        <p>
+            Select a subject to access its notes and study resources.
+        </p>
+
+    </div>
+
+
+    <div id="subjectContainer" class="subject-grid"></div>
+
+</section>
+
+
+<!-- RESOURCES -->
+
+<section class="resources-section" id="resources">
+
+    <div class="section-heading center">
+
+        <span class="section-label">
+            LEARNING RESOURCES
+        </span>
+
+        <h2>
+            Everything You Need to Study
+        </h2>
+
+    </div>
+
+
+    <div class="resource-grid">
+
+        <div class="resource-card">
+            <div class="resource-icon">🌐</div>
+            <h3>Online Notes</h3>
+            <p>
+                Read notes directly from the online learning platform.
+            </p>
+        </div>
+
+
+        <div class="resource-card">
+            <div class="resource-icon">📄</div>
+            <h3>PDF Notes</h3>
+            <p>
+                Access downloadable PDF study material.
+            </p>
+        </div>
+
+
+        <div class="resource-card">
+            <div class="resource-icon">💻</div>
+            <h3>Practical Material</h3>
+            <p>
+                Access practicals and programming resources.
+            </p>
+        </div>
+
+
+        <div class="resource-card">
+            <div class="resource-icon">📝</div>
+            <h3>Question Papers</h3>
+            <p>
+                Practice using previous and model question papers.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about-section" id="about">
+
+    <div class="about-content">
+
+        <span class="section-label">
+            ABOUT THE INSTITUTE
+        </span>
+
+        <h2>
+            Disha Computer Institute
+        </h2>
+
+        <p>
+            Disha Computer Institute provides practical and
+            career-oriented computer education for students,
+            freshers and professionals.
+        </p>
+
+        <p>
+            This student portal provides centralized access to
+            notes and study resources to help students learn
+            anytime and anywhere.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>Disha Computer Institute</h3>
+
+            <p>
+                Learn • Practice • Grow
+            </p>
+
+        </div>
+
+        <div>
+
+            <p>
+                Student Notes Portal
+            </p>
+
+            <p>
+                © 2026 Disha Computer Institute
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
